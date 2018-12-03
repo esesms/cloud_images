@@ -19,7 +19,8 @@ for photo in flickr.walk(tag_mode='all',
         min_upload_date = '1543510800',
         max_upload_date = '1543597200',
         content_type = 1,
-        per_page = 10):
+        per_page = 10,
+        color_codes = 'c'):    #7 for cyan, 8 for blue, c for white
     title = photo.get('title') #get title
     url = photo.get('url_c')   #get url
     urls.append(url)           #add url to the urls array
